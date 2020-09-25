@@ -76,6 +76,8 @@ Description
 
 <img src="https://avatars0.githubusercontent.com/u/66432859?v=460" width="50" />
 
-- [Joshua M. Small](https://github.com/WasteOfADrumBum)
-- <JMSmall89@gmail.com>
-- ![GitHub Followers](https://img.shields.io/github/followers/WasteOfADrumBum?label=Follow)
+[Joshua M. Small](https://github.com/WasteOfADrumBum)
+
+<JMSmall89@gmail.com>
+
+![GitHub Followers](https://img.shields.io/github/followers/WasteOfADrumBum?label=Follow)
