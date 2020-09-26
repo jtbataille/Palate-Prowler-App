@@ -15,16 +15,15 @@ Description
 ![GitHub top language](https://img.shields.io/github/languages/top/WasteOfADrumBum/Team-Project-II?color=green&logo=github&logoColor=green)
 ![GitHub language count](https://img.shields.io/github/languages/count/WasteOfADrumBum/Team-Project-II?color=green&logo=github&logoColor=green)
 
-- HTML5/CSS3
-- JavaScript
-- jQuery
-- Heroku
-- Node.js
-- Express.js
-- MySQL
-- Sequelize ORM
-- [Travis CI](https://travis-ci.com/dashboard)
-- ESLint
+| Front-end  | Back-end                                     |
+| ---------- | -------------------------------------------- |
+| HTML5      | Node.js                                      |
+| CSS3       | Express.js                                   |
+| Bootstrap  | MySQL                                        |
+| JavaScript | Sequelize ORM                                |
+| jQuery     | [Travis CI](https://travis-ci.com/dashboard) |
+|            | ESLint                                       |
+|            | Heroku                                       |
 
 ## Table of contents
 
