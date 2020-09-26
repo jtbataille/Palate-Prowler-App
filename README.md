@@ -57,7 +57,7 @@ npm install express
 
 ## Example Gif
 
-<img src="https://via.placeholder.com/500.png/09f/fff" width="500" />
+<img src="https://via.placeholder.com/500x300.png/09f/fff" width="500" />
 
 ## MVC Paradigm Folder Structure
 
