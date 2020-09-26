@@ -1,8 +1,10 @@
 # **Team Project II**
 
-![GitHub license](https://img.shields.io/badge/Made%20by-%40WasteOfADrumBum-green)
-![GitHub license](https://img.shields.io/badge/Made%20by-%40JinhiA-green)
+![GitHub license](https://img.shields.io/badge/Made%20by-%40WasteOfADrumBum-green)  
+![GitHub license](https://img.shields.io/badge/Made%20by-%40JinhiA-green)  
 ![GitHub license](https://img.shields.io/badge/Made%20by-%40jtbataille-green)
+
+[![Build Status](https://travis-ci.com/WasteOfADrumBum/Team-Project-II.svg?branch=master)](https://travis-ci.com/WasteOfADrumBum/Team-Project-II)
 
 ## Description
 
@@ -92,19 +94,21 @@ root directory/
 ├──▹ 📁 [node_modules](#NODE_MODULES)  
 │ └──▹ 📁 installed node files/folders  
 ├──▹ 📁 [public](#PUBLIC)/  
-│ ├──▹ 📁 [images](#images)/  
-│ ├──▹ 📁 [js](#JS)/  
-│ │ ├──▹ ☕ [login.js](#login.js)  
-│ │ ├──▹ ☕ [members.js](#members.js)  
-│ │ └──▹ ☕ [signup.js](#signup.js)  
-│ ├──▹ 📁 [stylesheet](#STYLESHEETS)/  
+│ ├──▹ 📁 [css](#css)/  
 │ │ └──▹ ✍ [style.css](#style.css)  
-│ ├──▹ ◌ͪ [login.html](#login.html)  
-│ ├──▹ ◌ͪ [members.html](#members.html)  
-│ └──▹ ◌ͪ [signup.html](#signup.html)  
+│ ├──▹ 📁 [js](#JS)/  
+│ │ ├──▹ ☕ [app.js](#app.js)  
+│ │ └──▹ ☕ [example.js](#example.js)  
+│ └──▹ 📁 [images](#images)/  
 ├──▹ 📁 [routes](#ROUTES)/  
-│ ├──▹ ☕ [api-routes.js](#api-routes.js)  
-│ └──▹ ☕ [html-routes.js](#html-routes.js)  
+│ ├──▹ ☕ [apiRoutes.js](#apiroutes.js)  
+│ └──▹ ☕ [htmlRoutes.js](#htmlroutes.js)  
+├──▹ 📁 [views](#views)/  
+│ ├──▹ 📁 [layouts](#layouts)/  
+│ │ └──▹ [main.handlebars](#main.handlebars)/  
+│ └──▹ 📁 [partials](#partials)/  
+│ │ ├──▹ 📁 [modal](#modal)/  
+│ │ └──▹ 📁 [nav](#nav)/  
 ├──▹ ☕ [server.js](#server.js)  
 └──▹ ᶨ [package.json](#package.json)
 
@@ -124,7 +128,7 @@ root directory/
 
 ## Test
 
-![GitHub test](https://img.shields.io/badge/test-100%25-success)
+[![Build Status](https://travis-ci.com/WasteOfADrumBum/Team-Project-II.svg?branch=master)](https://travis-ci.com/WasteOfADrumBum/Team-Project-II)
 
 ![GitHub open issues](https://img.shields.io/github/issues/WasteOfADrumBum/Team-Project-II)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/WasteOfADrumBum/Team-Project-II)
