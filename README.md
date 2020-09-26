@@ -8,6 +8,8 @@
 
 Description
 
+[Power Point Presentation](https://docs.google.com/presentation/d/1xrm38HKg0Q-XkR0NuTz1hU0R1DjMHUr4zBdDHl0bu1s/edit?usp=sharing)
+
 # Technologies Used
 
 ![GitHub top language](https://img.shields.io/github/languages/top/WasteOfADrumBum/Team-Project-II?color=green&logo=github&logoColor=green)
@@ -21,6 +23,8 @@ Description
 - Express.js
 - MySQL
 - Sequelize ORM
+- [Travis CI](https://travis-ci.com/dashboard)
+- ESLint
 
 ## Table of contents
 
@@ -28,6 +32,7 @@ Description
 - [Instructions](#instructions)
 - [Features](#features)
 - [Example Gif](#example-gif)
+- [MVC Paradigm Folder Structure](#MVC-Paradigm-Folder-Structure)
 - [Repository Link](#Repository)
 - [Test](#Test)
 - [Licence](#Licence)
@@ -40,6 +45,9 @@ npm install
 npm install express
 ```
 
+- [VS Code Eslint Extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Travis CI](https://github.com/marketplace/travis-ci)
+
 ## Instructions
 
 [Launch Application on Heroku](https://team-project-ii.herokuapp.com/)
@@ -51,6 +59,34 @@ npm install express
 ## Example Gif
 
 <img src="https://via.placeholder.com/500.png/09f/fff" width="500" />
+
+## MVC Paradigm Folder Structure
+
+- [config](<#config-(root/config)>) ↓
+  - → [middleware](<#MIDDLEWARE-(root/config/middleware)>) ↓
+    - → [isAuthenticated.js](#isAuthenticated.js)
+  - → [passport.js](#passport.js)
+  - → [config.json](#config.json)
+- [models](#) ↓
+  - → [index.js](#index.js)
+  - → [user.js](#user.js)
+- [node_modules](<#NODE_MODULES-(root/node_modules)>) ↓
+  - → installed node files/folders
+- [public](<#PUBLIC-(root/public)>) ↓
+  - → [js](<#JS-(root/public/js)>) ↓
+    - → [login.js](#login.js)
+    - → [members.js](#members.js)
+    - → [signup.js](#signup.js)
+  - → [stylesheet](<#STYLESHEETS-(root/public/stylesheets)>) ↓
+    - → [style.css](#style.css)
+  - → [login.html](#login.html)
+  - → [members.html](#members.html)
+  - → [signup.html](#signup.html)
+- [routes](<#ROUTES-(root/routes)>) ↓
+  - → [api-routes.js](#api-routes.js)
+  - → [html-routes.js](#html-routes.js)
+- [server.js](#server.js)
+- [package.json](#package.json)
 
 ## Repository
 
