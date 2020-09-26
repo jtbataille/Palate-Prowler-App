@@ -42,7 +42,7 @@ npm install express
 
 ## Instructions
 
-[Launch Application on Heroku](https://heroku.com)
+[Launch Application on Heroku](https://team-project-ii.herokuapp.com/)
 
 ## Features
 
