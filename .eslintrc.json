@@ -5,7 +5,6 @@
 		"node": true
 	},
 	"rules": {
-		"prettier/prettier": ["error"],
 		"no-duplicate-case": "error",
 		"no-empty": "error",
 		"no-extra-semi": "error",
@@ -26,11 +25,9 @@
 		"no-redeclare": "error",
 		"camelcase": "error",
 		"brace-style": "error",
-		"indent": ["error", 2],
-		"linebreak-style": ["error", "unix"],
+		"indent": ["error", "tab"],
+		"linebreak-style": ["error", "windows"],
 		"quotes": ["error", "double"],
 		"semi": ["error", "always"]
-	},
-	"extends": ["prettier"],
-	"plugins": ["prettier"]
+	}
 }

@@ -1,23 +1,21 @@
 {
-  "name": "post-author-joins",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.3",
-    "mysql2": "^1.6.4",
-    "sequelize": "^4.41.2"
-  },
-  "devDependencies": {
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-prettier": "^3.1.4"
-  }
+	"name": "post-author-joins",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"watch": "nodemon server.js",
+		"lint": "eslint **/*.js --quiet",
+		"lintfix": "eslint --fix",
+		"test": "npm run lint"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.16.3",
+		"mysql2": "^1.6.4",
+		"sequelize": "^4.41.2"
+	}
 }

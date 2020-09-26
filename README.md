@@ -43,11 +43,9 @@ Description
 ```
 npm install
 npm install express
-npm install -g prettier eslint
-npm install --save-dev eslint-config-prettier eslint-plugin-prettier
+npm install eslint
 ```
 
-- [ESLint & Prettier Setup](https://www.robinwieruch.de/prettier-eslint)
 - [Prettier Extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [VS Code Eslint Extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Travis CI](https://github.com/marketplace/travis-ci)
