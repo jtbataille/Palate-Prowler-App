@@ -24,6 +24,7 @@ Description
 | jQuery     | [Travis CI](https://travis-ci.com/dashboard) |
 |            | ESLint                                       |
 |            | Heroku                                       |
+|            | Handlebars                                   |
 
 ## Table of contents
 
