@@ -1,9 +1,8 @@
 # **Team Project II**
 
 ![GitHub license](https://img.shields.io/badge/Made%20by-%40WasteOfADrumBum-green)
-![GitHub license](https://img.shields.io/badge/Made%20by-%40username-green)
-![GitHub license](https://img.shields.io/badge/Made%20by-%40username-green)
-![GitHub license](https://img.shields.io/badge/Made%20by-%4040username-green)
+![GitHub license](https://img.shields.io/badge/Made%20by-%40JinhiA-green)
+![GitHub license](https://img.shields.io/badge/Made%20by-%40jtbataille-green)
 
 ## Description
 
@@ -14,7 +13,14 @@ Description
 ![GitHub top language](https://img.shields.io/github/languages/top/WasteOfADrumBum/Team-Project-II?color=green&logo=github&logoColor=green)
 ![GitHub language count](https://img.shields.io/github/languages/count/WasteOfADrumBum/Team-Project-II?color=green&logo=github&logoColor=green)
 
-- List of Technologies Used
+- HTML5/CSS3
+- JavaScript
+- jQuery
+- Heroku
+- Node.js
+- Express.js
+- MySQL
+- Sequelize ORM
 
 ## Table of contents
 
@@ -29,11 +35,14 @@ Description
 
 ## Installation
 
-- Installation instructions
+```
+npm install
+npm install express
+```
 
 ## Instructions
 
-![Launch Application](https://wasteofadrumbum.github.io/Team-Project-II/)
+[Launch Application on Heroku](https://heroku.com)
 
 ## Features
 
@@ -81,3 +90,19 @@ Description
 <JMSmall89@gmail.com>
 
 ![GitHub Followers](https://img.shields.io/github/followers/WasteOfADrumBum?label=Follow)
+
+<img src="https://avatars0.githubusercontent.com/u/66880369?v=460" width="50" />
+
+[Jinhi Ahn](https://github.com/JinhiA)
+
+<ahn.jinhi@gmail.com>
+
+![GitHub Followers](https://img.shields.io/github/followers/JinhiA?label=Follow)
+
+<img src="https://avatars0.githubusercontent.com/u/65187093?v=460" width="50" />
+
+[Jarrod Bataille](https://github.com/jtbataille)
+
+<jtbataille@me.com>
+
+![GitHub Followers](https://img.shields.io/github/followers/jtbataille?label=Follow)
