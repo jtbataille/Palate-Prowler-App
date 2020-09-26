@@ -121,26 +121,8 @@ root directory/
 ![GitHub Forks](https://img.shields.io/github/forks/WasteOfADrumBum/Team-Project-II?label=Fork)
 ![GitHub Watchers](https://img.shields.io/github/watchers/WasteOfADrumBum/Team-Project-II?label=Watch)
 
-<img src="https://avatars0.githubusercontent.com/u/66432859?v=460" width="50" />
-
-[Joshua M. Small](https://github.com/WasteOfADrumBum)
-
-<JMSmall89@gmail.com>
-
-![GitHub Followers](https://img.shields.io/github/followers/WasteOfADrumBum?label=Follow)
-
-<img src="https://avatars0.githubusercontent.com/u/66880369?v=460" width="50" />
-
-[Jinhi Ahn](https://github.com/JinhiA)
-
-<ahn.jinhi@gmail.com>
-
-![GitHub Followers](https://img.shields.io/github/followers/JinhiA?label=Follow)
-
-<img src="https://avatars0.githubusercontent.com/u/65187093?v=460" width="50" />
-
-[Jarrod Bataille](https://github.com/jtbataille)
-
-<jtbataille@me.com>
-
-![GitHub Followers](https://img.shields.io/github/followers/jtbataille?label=Follow)
+| <img src="https://avatars0.githubusercontent.com/u/66432859?v=460" width="50" />          | <img src="https://avatars0.githubusercontent.com/u/66880369?v=460" width="50" /> | <img src="https://avatars0.githubusercontent.com/u/65187093?v=460" width="50" />     |
+| ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| [Joshua M. Small](https://github.com/WasteOfADrumBum)                                     | [Jinhi Ahn](https://github.com/JinhiA)                                           | [Jarrod Bataille](https://github.com/jtbataille)                                     |
+| <JMSmall89@gmail.com>                                                                     | <ahn.jinhi@gmail.com>                                                            | <jtbataille@me.com>                                                                  |
+| ![GitHub Followers](https://img.shields.io/github/followers/WasteOfADrumBum?label=Follow) | ![GitHub Followers](https://img.shields.io/github/followers/JinhiA?label=Follow) | ![GitHub Followers](https://img.shields.io/github/followers/jtbataille?label=Follow) |
