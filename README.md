@@ -50,6 +50,16 @@ npm install eslint
 - [VS Code Eslint Extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Travis CI](https://github.com/marketplace/travis-ci)
 
+### JawsDB
+
+| Property | Value                                                     |
+| -------- | --------------------------------------------------------- |
+| Host     | sm9j2j5q6c8bpgyq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com |
+| Username | r9l0r0uy57bkpy4r                                          |
+| Password | s8ybwrtr5swrk5dw                                          |
+| Port     | 3306                                                      |
+| Database | tkyj153geucbe07u                                          |
+
 ## Instructions
 
 [Launch Application on Heroku](https://team-project-ii.herokuapp.com/)
