@@ -42,8 +42,6 @@ Description
 
 ```
 npm install
-npm install express
-npm install eslint
 ```
 
 - [Prettier Extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
@@ -76,12 +74,20 @@ npm install eslint
 
 root directory/  
 ├──▹ 📁 [config](#config)/  
-│ ├──▹ 📁 [middleware](#MIDDLEWARE)/  
-│ │ └──▹ ☕ [isAuthenticated.js](#isAuthenticated.js)  
 │ ├──▹ ☕ [passport.js](#passport.js)  
-│ └──▹ ᶨ [config.json](#config.json)  
+│ └──▹ ☕ [config.js](#config.js)  
+├──▹ 📁 [controllers](#controllers)/  
+│ ├──▹ ☕ [appController.js](#appController.js)  
+│ └──▹ ☕ [authController.js](#authController.js)  
+├──▹ 📁 [db](#db)/  
+│ ├──▹ ☕ [seed.js](#seed.js)  
+│ └──▹ [schema.sql](schema.sql)  
+├──▹ 📁 [middleware](#MIDDLEWARE)/  
+│ └──▹ ☕ [ensureAuthenticated.js](#ensureAuthenticated.js)  
 ├──▹ 📁 [models](#models)/  
+│ ├──▹ ☕ [example.js](#example.js)  
 │ ├──▹ ☕ [index.js](#index.js)  
+│ ├──▹ ☕ [session.js](#session.js)  
 │ └──▹ ☕ [user.js](#user.js)  
 ├──▹ 📁 [node_modules](#NODE_MODULES)  
 │ └──▹ 📁 installed node files/folders  
