@@ -62,31 +62,57 @@ npm install express
 
 ## MVC Paradigm Folder Structure
 
-- [config](<#config-(root/config)>) ↓
-  - → [middleware](<#MIDDLEWARE-(root/config/middleware)>) ↓
-    - → [isAuthenticated.js](#isAuthenticated.js)
-  - → [passport.js](#passport.js)
-  - → [config.json](#config.json)
-- [models](#) ↓
-  - → [index.js](#index.js)
-  - → [user.js](#user.js)
-- [node_modules](<#NODE_MODULES-(root/node_modules)>) ↓
-  - → installed node files/folders
-- [public](<#PUBLIC-(root/public)>) ↓
-  - → [js](<#JS-(root/public/js)>) ↓
-    - → [login.js](#login.js)
-    - → [members.js](#members.js)
-    - → [signup.js](#signup.js)
-  - → [stylesheet](<#STYLESHEETS-(root/public/stylesheets)>) ↓
-    - → [style.css](#style.css)
-  - → [login.html](#login.html)
-  - → [members.html](#members.html)
-  - → [signup.html](#signup.html)
-- [routes](<#ROUTES-(root/routes)>) ↓
-  - → [api-routes.js](#api-routes.js)
-  - → [html-routes.js](#html-routes.js)
-- [server.js](#server.js)
-- [package.json](#package.json)
+root directory/
+
+├── 📁 [config](#config)/
+
+│ ├── 📁 [middleware](#MIDDLEWARE)/
+
+│ │ └── ☕ [isAuthenticated.js](#isAuthenticated.js)
+
+│ ├── ☕ [passport.js](#passport.js)
+
+│ └── [config.json](#config.json)
+
+├── 📁 [models](#models)/
+
+│ ├── ☕ [index.js](#index.js)
+
+│ └── ☕ [user.js](#user.js)
+
+├── 📁 [node_modules](#NODE_MODULES)
+
+│ └── installed node files/folders
+
+├── 📁 [public](#PUBLIC)/
+
+│ ├── 📁 [js](#JS)/
+
+│ │ ├── ☕ [login.js](#login.js)
+
+│ │ ├── ☕ [members.js](#members.js)
+
+│ │ └── ☕ [signup.js](#signup.js)
+
+│ ├── 📁 [stylesheet](#STYLESHEETS)/
+
+│ │ └── [style.css](#style.css)
+
+│ ├── [login.html](#login.html)
+
+│ ├── [members.html](#members.html)
+
+│ └── [signup.html](#signup.html)
+
+├── 📁 [routes](#ROUTES)/
+
+│ ├── ☕ [api-routes.js](#api-routes.js)
+
+│ └── ☕ [html-routes.js](#html-routes.js)
+
+├── ☕ [server.js](#server.js)
+
+└── [package.json](#package.json)
 
 ## Repository
 
