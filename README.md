@@ -108,7 +108,15 @@ root directory/
 │ │ └──▹ [main.handlebars](#main.handlebars)/  
 │ └──▹ 📁 [partials](#partials)/  
 │ │ ├──▹ 📁 [modal](#modal)/  
-│ │ └──▹ 📁 [nav](#nav)/  
+│ │ │ └──▹ [login-block.handlebars](#login-block.handlebars)
+│ │ ├──▹ 📁 [nav](#nav)/  
+│ │ │ └──▹ [nav-block.handlebars](#nav-block.handlebars)
+│ │ ├──▹ [404.handlebars](#404.handlebars)
+│ │ ├──▹ [dashboard.handlebars](#dashboard.handlebars)
+│ │ ├──▹ [example-details.handlebars](#example-details.handlebars)
+│ │ ├──▹ [example.handlebars](#example.handlebars)
+│ │ ├──▹ [profile.handlebars](#profile.handlebars)
+│ │ └──▹ [register.handlebars](#register.handlebars)
 ├──▹ ☕ [server.js](#server.js)  
 └──▹ ᶨ [package.json](#package.json)
 
