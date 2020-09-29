@@ -1,12 +1,14 @@
+{{!-- nav-block.handlebars --}}
 {{> nav/nav-block user=true register=false}}
 
+{{!-- Profile Settings --}}
 <div class="container">
   <header align="center" class="header-wrap">
-    <h3>View or update your user</h3>
-    <div class="userId">
-      {{!-- <h3>Welcome, {{userInfo.firstName}}</h3> --}}
+	<div class="userId">
+      <h3>{{userInfo.firstName}}'s Profile Settings</h3>
       {{!-- <h5 id="user-number" data-useremail="{{userInfo.email}}">Account email: {{userInfo.email}}</h5> --}}
     </div>
+    <h3>View or update your account</h3>
     <h3 id="update-err-msg"></h3>
   </header>
 
@@ -34,11 +36,11 @@
     </div>
 
     <div>
-      <button type="submit" id="update-user" data-id="{{userInfo.id}}" class="btn btn-primary">Update</button>
+      <button type="submit" id="update-user" data-id="{{userInfo.id}}" class="btn btn-outline-primary">Update</button>
       {{#unless userInfo.isAdmin}}
-        <button type="submit" id="delete-user" class="btn btn-primary">Delete</button>
+        <button type="submit" id="delete-user" class="btn btn-outline-primary">Delete</button>
       {{/unless}}
-      <button type="submit" id="view-user" data-id="{{userInfo.id}}" class="btn btn-primary">Refresh</button>
+      <button type="submit" id="view-user" data-id="{{userInfo.id}}" class="btn btn-outline-primary">Refresh</button>
     </div>
   </form>
 
