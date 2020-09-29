@@ -1,0 +1,155 @@
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+	<i class="far fa-calendar-plus"></i>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form-title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+		<!-- Header -->
+      <div class="modal-header">
+		  <!-- Title -->
+        <h5 class="modal-title" id="modalLongTitle">Create an Event</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+			<!-- NAME -->
+			<div class="form-row">
+				<div class="col-md-12 mb-3">
+					<label for="modal-form-name">Truck Name:</label>
+					<input type="text" class="form-control" id="modal-form-name" placeholder="Name" required>
+				</div>
+			<div class="form-row">
+				<div class="col-sm-12"><hr></div>
+			</div> 
+			<!-- LOCATION -->
+			<div class="form-row">
+				<div class="col-md-12 mb-3">
+					<label for="modal-form-address">Address:</label>
+					<input type="text" class="form-control" id="modal-form-address" placeholder="Address" required>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-md-6 mb-3">
+					<label for="modal-form-city">City:</label>
+					<input type="text" class="form-control" id="modal-form-city" placeholder="City" required>
+				</div>
+				<div class="col-md-3 mb-3">
+					<label for="modal-form-state">State:</label>
+					<input type="text" class="form-control" id="modal-form-state" placeholder="State" required>
+				</div>
+					<div class="col-md-3 mb-3">
+					<label for="modal-form-zip">Zip:</label>
+					<input type="text" class="form-control" id="modal-form-zip" placeholder="Zip" required>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-sm-12"><hr></div>
+			</div> 
+			<!-- ABOUT TEXTBOX -->
+			<div class="form-row">
+    			<label for="modal-form-about">About your truck:</label>
+    			<textarea class="form-control" id="modal-form-about" rows="3"></textarea>
+  			</div>
+			<div class="form-row">
+				<div class="col-sm-12"><hr></div>
+			</div> 
+			<!-- CUISINE CHECKBOXES -->
+			<div class="form-row">
+				Cuisine:
+			</div>
+			<div class="form-row">
+				<div class="col-sm-4 form-check">
+					<input class="form-check-input" type="checkbox" id="Checkbox1" value="option1">
+					<label class="form-check-label" for="Checkbox1">American</label>
+				</div>
+				<div class="col-sm-4 form-check">
+					<input class="form-check-input" type="checkbox" id="Checkbox2" value="option2">
+					<label class="form-check-label" for="Checkbox2">Barbecue</label>
+				</div>
+				<div class="col-sm-4 form-check">
+					<input class="form-check-input" type="checkbox" id="Checkbox3" value="option3">
+					<label class="form-check-label" for="Checkbox3">Chinese</label>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-sm-4 form-check">
+					<input class="form-check-input" type="checkbox" id="Checkbox4" value="option4">
+					<label class="form-check-label" for="Checkbox4">French</label>
+				</div>
+				<div class="col-sm-4 form-check">
+					<input class="form-check-input" type="checkbox" id="Checkbox5" value="option5">
+					<label class="form-check-label" for="Checkbox5">Greek</label>
+				</div>
+				<div class="col-sm-4 form-check">
+					<input class="form-check-input" type="checkbox" id="Checkbox6" value="option6">
+					<label class="form-check-label" for="Checkbox6">Hamburger</label>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-sm-4 form-check">
+					<input class="form-check-input" type="checkbox" id="Checkbox7" value="option7">
+					<label class="form-check-label" for="Checkbox7">Indian</label>
+				</div>
+				<div class="col-sm-4 form-check">
+					<input class="form-check-input" type="checkbox" id="Checkbox8" value="option8">
+					<label class="form-check-label" for="Checkbox8">Japanese</label>
+				</div>
+				<div class="col-sm-4 form-check">
+					<input class="form-check-input" type="checkbox" id="Checkbox9" value="option9">
+					<label class="form-check-label" for="Checkbox9">Mexican</label>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-sm-4 form-check">
+					<input class="form-check-input" type="checkbox" id="Checkbox10" value="option10">
+					<label class="form-check-label" for="Checkbox10">Pizza</label>
+				</div>
+				<div class="col-sm-4 form-check">
+					<input class="form-check-input" type="checkbox" id="Checkbox11" value="option11">
+					<label class="form-check-label" for="Checkbox11">Seafood</label>
+				</div>
+				<div class="col-sm-4 form-check">
+					<input class="form-check-input" type="checkbox" id="Checkbox12" value="option12">
+					<label class="form-check-label" for="Checkbox12">Steak</label>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-sm-4 form-check">
+					<input class="form-check-input" type="checkbox" id="Checkbox13" value="option13">
+					<label class="form-check-label" for="Checkbox13">Sushi</label>
+				</div>
+				<div class="col-sm-4 form-check">
+					<input class="form-check-input" type="checkbox" id="Checkbox14" value="option14">
+					<label class="form-check-label" for="Checkbox14">Thai</label>
+				</div>
+				<div class="col-sm-4"></div>
+			</div>
+			<div class="form-row">
+				<div class="col-sm-12"><hr></div>
+			</div> 
+			<!-- UPLOAD PICTURE -->
+			<div class="form-row">
+				<label for="modal-form-picture">Upload a picture:</label>
+				<input type="file" class="form-control-file" id="modal-form-picture">
+			</div>
+			<div class="form-row">
+				<div class="col-sm-12"><hr></div>
+			</div> 
+		</form>
+      </div>
+	  <!-- Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+			<i class="far fa-calendar-times"></i>
+		</button>
+        <button type="button" class="btn btn-primary">
+			<i class="far fa-calendar-plus"></i>
+		</button>
+      </div>
+    </div>
+  </div>
+</div>
