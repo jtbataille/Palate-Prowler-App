@@ -4,31 +4,33 @@
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
-        <h2>{{msg}}</h2>
-        <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
-          </div>
-          <div class="form-group">
-            <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
-          </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
-        <h4>Examples belong to this user:</h4>
-        <ul id="example-list" class="list-group">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul>
+        {{#each events}}
+          {{#unless past}}
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="Food Truck Logo/Picture">
+              <div class="card-body">
+                  <h5 class="card-title eventTitle">Title</h5>
+                  <p class="card-text eventDescription">Description OIFJWOEIFOEWIoifwjeofiwjeofijDVOIJWEOFIJWEOFIJWEOIFJ woeifjw eofijwoeifjw oeif</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item eventDate text-danger">Date(s): January 1, 2020</li>
+                  <li class="list-group-item eventLocation text-danger">Find us here: 123 Fake Street, Apple, New York, 000001</li>
+              </ul>
+              <div>
+                  <iframe width="500" height="300" src="ThisIsWhereTheMapWillBe" class="eventMap"></iframe>    
+              </div>
+              <div class="card-body">
+                  <a href="#" class="btn btn-danger" id="button" onclick="modEventAttendBtn()">Click to Attend!</a>
+              </div>
+            </div>
+          {{/unless}}
+      {{/each}}
       </div>
     </div>
   </div>
 </div>
+
+
 
 <script src="/assets/js/example.js"></script>
 
@@ -36,4 +38,13 @@
 
 <script>
   var userId = {{userInfo.id}};
+
+      function modEventAttendBtn() {
+        let elem = document.getElementById("button");
+        if (elem.innerHTML == "Click to Attend!") {
+            elem.innerHTML = "Is Attending!";
+        } else {
+            elem.innerHTML = "Click to Attend!";
+        }
+    }
 </script>
