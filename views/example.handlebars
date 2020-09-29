@@ -3,6 +3,57 @@
 <div id="home">
   <div class="container">
     <div class="row">
+      <div class="col-4"> 
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">My Profile</h5>
+      <h6 class="card-subtitle mb-2 text-muted">About Me</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+      <a href="#" class="card-link">Email</a>
+    </div>
+  </div>
+
+  <div class="card border-primary mb-3" style="max-width: 18rem;">
+    <div class="card-header">My Event's</div>
+    <div id="list-example" class="list-group">
+        <ul id="example-list" class="list-group">
+          {{#each examples}}
+          <li data-id="{{this.id}}" class="list-group-item">
+            <a href="example/{{this.id}}">{{this.text}}</a>
+            <button class="btn btn-outline-danger float-right delete">ｘ</button>
+          </li>
+          {{/each}}
+        </ul>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">My Attending Events</h5>
+      </div>
+
+      <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+      </div>
+      <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+        <h4 id="list-item-1">Item 1</h4>
+        <p>...</p>
+        <h4 id="list-item-2">Item 2</h4>
+        <p>...</p>
+        <h4 id="list-item-3">Item 3</h4>
+        <p>...</p>
+        <h4 id="list-item-4">Item 4</h4>
+        <p>...</p>
+      </div>
+
+    {{bootstrap-modal}}
+
+      </div> 
+
       <div class="col-8 offset-2">
         {{#each events}}
           {{#unless past}}
