@@ -56,21 +56,21 @@
       <div class="col-8">
         {{#each examples}}
           {{!-- {{#unless past}} --}}
-            <div class="card">
+            <div class="card event-card">
               <img src="{{this.picture}}" class="card-img-top" alt="Food Truck Logo/Picture">
               <div class="card-body">
-                  <h5 class="card-title eventTitle">{{this.name}}</h5>
-                  <p class="card-text eventDescription">Description: {{this.about}}</p>
+                  <h5 class="card-title eventTitle text-center"><span style="font-size:40px">{{this.name}}</span></h5>
+                  <p class="card-text eventDescription"><span style="text-decoration: underline; font-size: 20px">Description:</span> {{this.about}}</p>
               </div>
               <ul class="list-group list-group-flush">
-                  <li class="list-group-item eventDate text-danger">Date(s): January 1, 2020</li>
-                  <li class="list-group-item eventLocation text-danger">Find us here: {{this.address}}, {{this.city}}, {{this.state}}, {{this.zip}}</li>
+                  <li class="list-group-item eventDate text-dark"><span style="text-decoration: underline; font-size: 18px">Date(s):</span> {{this.datefrom}} - {{this.dateto}}</li>
+                  <li class="list-group-item eventLocation text-dark"><span style="text-decoration: underline; font-size: 16px">You can find us right here:</span> {{this.address}}, {{this.city}}, {{this.state}}, {{this.zip}}</li>
               </ul>
               <div>
                   <iframe height="300" width="725" src="ThisIsWhereTheMapWillBe" class="eventMap"></iframe>    
               </div>
               <div class="card-body">
-                  <a href="#" class="btn btn-danger" id="button" onclick="modEventAttendBtn()">Click to Attend!</a>
+                  <a href="#" class="btn btn-light border border-dark" id="eventButton" onclick="modEventAttendBtn()">Click to Attend!</a>
               </div>
             </div>
           {{!-- {{/unless}} --}}
@@ -90,7 +90,7 @@
   var userId = {{userInfo.id}};
 
       function modEventAttendBtn() {
-        let elem = document.getElementById("button");
+        let elem = document.getElementById("eventButton");
         if (elem.innerHTML == "Click to Attend!") {
             elem.innerHTML = "Is Attending!";
         } else {
