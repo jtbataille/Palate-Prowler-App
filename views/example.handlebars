@@ -4,19 +4,19 @@
   <div class="container">
     <div class="row">
       <div class="col-4"> 
-        <div class="card">
-          <div class="card-body">
+        <div id="profile-card" class="card">
+          <div class="card-body text-center">
             <h5 class="card-title">My Profile</h5>
             <h6 class="card-subtitle mb-2 text-muted">About Me</h6>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="card-link">Email</a>
+            <a class="btn btn-light border border-dark" href="/profile">Update My Profile</a>
           </div>
         </div>
 
         <div class="card border-primary mb-3">
-          <div class="card-body">
-            <h5 class="card-title">My Event's</h5>
+          <div class="card-body text-center">
+            <h5 class="card-title">My Events</h5>
             </div>
           <div id="list-example" class="list-group">
               <ul id="example-list" class="list-group">
@@ -31,8 +31,8 @@
         </div>
 
         <div class="card border-primary mb-3">
-          <div class="card-body">
-            <h5 class="card-title">My Attending Event's</h5>
+          <div class="card-body text-center">
+            <h5 class="card-title">My Attending Events</h5>
             </div>
           <div id="list-example" class="list-group">
              <ul id="example-list" class="list-group">
@@ -41,7 +41,7 @@
                   <a href="example/{{this.id}}">{{this.name}}</a>
                   <button class="btn btn-outline-danger float-right delete">ｘ</button>
                 </li>
-                {{/each}} {{!-- {{ add in if or unless to populate/show current date attending}}--}}
+                {{/each}} {{!-- {{ add in if to populate/show current date attending}}--}}
               </ul>
           </div>
         </div>

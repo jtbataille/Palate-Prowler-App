@@ -35,6 +35,13 @@
       </div>
     </div>
 
+     <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="inputPassword">About Me</label>
+        <input type="text" class="form-control" id="inputAboutMe" value="{{userInfo.aboutMe}}">
+      </div>
+    </div>
+
     <div>
       <button type="submit" id="update-user" data-id="{{userInfo.id}}" class="btn btn-outline-primary">Update</button>
       {{#unless userInfo.isAdmin}}
