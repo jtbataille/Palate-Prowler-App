@@ -1,5 +1,7 @@
 // Get references to page elements
 const $exampleName = $("#modal-form-name");
+const $exampleDateFrom = $("#modal-form-datefrom");
+const $exampleDateTo = $("#modal-form-dateto");
 const $exampleAddress = $("#modal-form-address");
 const $exampleCity = $("#modal-form-city");
 const $exampleState = $("#modal-form-state");
@@ -86,6 +88,8 @@ const handleFormSubmit = function (event) {
 	console.log($exampleOption1);
 	const example = {
 		name: $exampleName.val().trim(),
+		datefrom: $exampleDateFrom.val().trim(),
+		dateto: $exampleDateTo.val().trim(),
 		address: $exampleAddress.val().trim(),
 		city: $exampleCity.val().trim(),
 		state: $exampleState.val().trim(),
@@ -119,6 +123,8 @@ const handleFormSubmit = function (event) {
 	});
 
 	$exampleName.val("");
+	$exampleDateFrom.val("");
+	$exampleDateTo.val("");
 	$exampleAddress.val("");
 	$exampleCity.val("");
 	$exampleState.val("");

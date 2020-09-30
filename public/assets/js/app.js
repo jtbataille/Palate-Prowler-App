@@ -140,3 +140,13 @@ $("#login").on("click", function (event) {
 		}
 	});
 });
+
+$("#datepicker-input input").datepicker({
+	format: "mm/dd/yy",
+	maxViewMode: 2,
+	todayBtn: "linked",
+	clearBtn: true,
+	orientation: "bottom auto",
+	forceParse: false,
+	autoclose: true,
+});
