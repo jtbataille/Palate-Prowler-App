@@ -49,7 +49,7 @@ body {
 	height: 100%;
 	border-radius: 0.25rem;
 	margin-bottom: 2%;
-	width: 600px;
+	/* width: 600px; */
 }
 
 [data-useremail="true"] {
