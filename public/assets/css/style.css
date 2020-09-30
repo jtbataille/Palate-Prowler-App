@@ -74,3 +74,13 @@ hr {
 .card-body {
 	color: #444;
 }
+
+.event-card {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+#eventButton:hover {
+	background-color: #333;
+	color: white;
+}
