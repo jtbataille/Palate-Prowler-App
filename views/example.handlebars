@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-4"> 
-        <div class="card" style="width: 18rem;">
+        <div class="card">
           <div class="card-body">
             <h5 class="card-title">My Profile</h5>
             <h6 class="card-subtitle mb-2 text-muted">About Me</h6>
@@ -14,13 +14,15 @@
           </div>
         </div>
 
-        <div class="card border-primary mb-3" style="max-width: 18rem;">
-          <div class="card-header">My Event's</div>
+        <div class="card border-primary mb-3">
+          <div class="card-body">
+            <h5 class="card-title">My Event's</h5>
+            </div>
           <div id="list-example" class="list-group">
               <ul id="example-list" class="list-group">
                 {{#each examples}}
                 <li data-id="{{this.id}}" class="list-group-item">
-                  <a href="example/{{this.id}}">{{this.text}}</a>
+                  <a href="example/{{this.id}}">{{this.name}}</a>
                   <button class="btn btn-outline-danger float-right delete">ｘ</button>
                 </li>
                 {{/each}}
@@ -28,49 +30,41 @@
           </div>
         </div>
 
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card border-primary mb-3">
           <div class="card-body">
-            <h5 class="card-title">My Attending Events</h5>
-          </div>
-
+            <h5 class="card-title">My Attending Event's</h5>
+            </div>
           <div id="list-example" class="list-group">
-            <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-          </div>
-          <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
-            <h4 id="list-item-1">Item 1</h4>
-            <p>...</p>
-            <h4 id="list-item-2">Item 2</h4>
-            <p>...</p>
-            <h4 id="list-item-3">Item 3</h4>
-            <p>...</p>
-            <h4 id="list-item-4">Item 4</h4>
-            <p>...</p>
+             <ul id="example-list" class="list-group">
+                {{#each examples}}
+                <li data-id="{{this.id}}" class="list-group-item">
+                  <a href="example/{{this.id}}">{{this.name}}</a>
+                  <button class="btn btn-outline-danger float-right delete">ｘ</button>
+                </li>
+                {{/each}} {{!-- {{ add in if or unless to populate/show current date attending}}--}}
+              </ul>
           </div>
         </div>
         
-        <div class="card" style="width: 18rem;">
+        <div class="card">
           <div class="card-body text-center">
               {{> modal/bootstrap-modal}}
           </div>
         </div>
       </div>
 
-      <div class="col-8 float-right">
-        {{!-- {{#each events}}
-          {{#unless past}} --}}
+      <div class="col-8">
+        {{#each examples}}
+          {{!-- {{#unless past}} --}}
             <div class="card">
-              <img src="..." class="card-img-top" alt="Food Truck Logo/Picture">
+              <img src="{{this.picture}}" class="card-img-top" alt="Food Truck Logo/Picture">
               <div class="card-body">
-                  <h5 class="card-title eventTitle">Title</h5>
-                  <p class="card-text eventDescription">Description OIFJWOEIFOEWIoifwjeofiwjeofijDVOIJWEOFIJWEOFIJWEOIFJ woeifjw eofijwoeifjw oeif</p>
+                  <h5 class="card-title eventTitle">{{this.name}}</h5>
+                  <p class="card-text eventDescription">Description: {{this.about}}</p>
               </div>
               <ul class="list-group list-group-flush">
                   <li class="list-group-item eventDate text-danger">Date(s): January 1, 2020</li>
-                  <li class="list-group-item eventLocation text-danger">Find us here: 123 Fake Street, Apple, New York, 000001</li>
+                  <li class="list-group-item eventLocation text-danger">Find us here: {{this.address}}, {{this.city}}, {{this.state}}, {{this.zip}}</li>
               </ul>
               <div>
                   <iframe height="300" width="725" src="ThisIsWhereTheMapWillBe" class="eventMap"></iframe>    
@@ -79,8 +73,8 @@
                   <a href="#" class="btn btn-danger" id="button" onclick="modEventAttendBtn()">Click to Attend!</a>
               </div>
             </div>
-          {{!-- {{/unless}}
-      {{/each}} --}}
+          {{!-- {{/unless}} --}}
+        {{/each}}
       </div>
     </div>
   </div>
