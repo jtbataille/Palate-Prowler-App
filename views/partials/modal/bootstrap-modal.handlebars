@@ -4,7 +4,7 @@
 <!-- Modal -->
 <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form-title"
     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content">
             <!-- Header -->
             <div class="modal-header">
@@ -14,6 +14,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+			<!-- Body -->
             <div class="modal-body">
                 <form class="clearfix" action="POST">
                     <!-- NAME -->
@@ -30,17 +31,13 @@
 					</div>
 					<!-- DATES -->
 					<div class="form-row">
-						<div class='col-md-6'>
-							<div class="form-group datepicker date" id="datepicker-input">
-								<label for="modal-form-datefrom">Date From:</label>
-                                <input type="text" id="modal-form-datefrom" name="date" placeholder="MM/DD/YY" class="form-control">
-                            </div>
+						<div class="col-md-6 form-group datepicker" id="datepicker-input" >
+							<label for="modal-form-datefrom">Date From:</label>
+							<input type="text" id="modal-form-datefrom" name="date" placeholder="MM/DD/YY" class="form-control" data-provide="datepicker">
 						</div>
-						<div class='col-md-6'>
-							<div class="form-group datepicker date" id="datepicker-input">
-								<label for="modal-form-dateto">Date To:</label>
-                                <input type="text" id="modal-form-dateto" name="date" placeholder="MM/DD/YY" class="form-control">
-                            </div>
+						<div class="col-md-6 form-group datepicker" id="datepicker-input">
+							<label for="modal-form-dateto">Date To:</label>
+							<input type="text" id="modal-form-dateto" name="date" placeholder="MM/DD/YY" class="form-control">
 						</div>
 					</div>
 					<div class="form-row">
