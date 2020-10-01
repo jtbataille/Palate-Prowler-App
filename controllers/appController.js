@@ -2,10 +2,7 @@ module.exports = function (db) {
 	return {
 		// Get all examples
 		getExamples: function (req, res) {
-			db.Example.findAll({
-				where: { UserId: req.session.passport.user.id },
-				// remove for all visable
-			}).then(function (dbExamples) {
+			db.Example.findAll({}).then(function (dbExamples) {
 				console.log(dbExamples);
 				res.json(dbExamples);
 			});
