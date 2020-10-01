@@ -113,8 +113,10 @@ const handleFormSubmit = function (event) {
 		UserId: window.userId,
 	};
 
-	if (!(example.name && example.address)) {
-		alert("You must enter a name and address!");
+	if (
+		!(example.name && example.address && example.datefrom && example.dateto)
+	) {
+		alert("You must enter a name, date, and address!");
 		return;
 	}
 

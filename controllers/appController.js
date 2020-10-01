@@ -4,6 +4,7 @@ module.exports = function (db) {
 		getExamples: function (req, res) {
 			db.Example.findAll({
 				where: { UserId: req.session.passport.user.id },
+				// remove for all visable
 			}).then(function (dbExamples) {
 				console.log(dbExamples);
 				res.json(dbExamples);
