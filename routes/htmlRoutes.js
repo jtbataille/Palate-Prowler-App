@@ -60,14 +60,18 @@ module.exports = (db) => {
 	router.get("/example", function (req, res) {
 		if (req.isAuthenticated()) {
 			db.Example.findAll({
-				where: { UserId: req.session.passport.user.id },
+				// where: { UserId: req.session.passport.user.id },
 				raw: true,
 			}).then(function (dbExamples) {
+				const myExamples = dbExamples.filter(
+					(event) => event.UserId === req.session.passport.user.id,
+				);
 				res.render("example", {
 					userInfo: req.session.passport.user,
 					isloggedin: req.isAuthenticated(),
 					msg: "Welcome!",
 					examples: dbExamples,
+					myExamples,
 				});
 			});
 		} else {
