@@ -75,17 +75,12 @@ hr {
 	color: #444;
 }
 
-.event-card {
-	margin-top: 5px;
-	margin-bottom: 15px;
-}
-
 #eventButton:hover {
 	background-color: #333;
 	color: white;
 }
 
-#profile-card {
+#profile-card, .event-card {
 	margin-top: 20px;
 	margin-bottom: 15px;
 }
