@@ -22,6 +22,7 @@ module.exports = (db) => {
 				state: "North Carolina",
 				zip: "28410",
 				about: "Adam's Truck is awesome!",
+				picture: "/assets/images/adam-demo.jpg",
 				UserId: 1,
 			}).then(() => {
 				db.Example.create({
@@ -33,6 +34,7 @@ module.exports = (db) => {
 					state: "North Carolina",
 					zip: "27410",
 					about: "Uma's Truck is fabulous!",
+					picture: "/assets/images/uma-demo.jpg",
 					UserId: 2,
 				});
 			});
