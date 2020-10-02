@@ -80,8 +80,16 @@ hr {
 	color: white;
 }
 
-#profile-card, .event-card {
+#profile-card,
+.event-card {
 	margin-top: 20px;
 	margin-bottom: 15px;
 }
 
+.event-card {
+	padding: 1rem;
+}
+
+.event-card .card-img-top {
+	border-radius: 15px 15px 15px 15px/35px 35px 35px 15px;
+}
