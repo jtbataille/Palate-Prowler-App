@@ -1,23 +1,41 @@
 module.exports = (db) => {
-  db.User.create({
-    firstName: 'Adam',
-    lastName: 'Gates',
-    email: 'adam@gates.com',
-    password: process.env.ADMIN_USER_PWD,
-    isAdmin: true
-  }).then(() => {
-    db.User.create({
-      firstName: 'Uma',
-      lastName: 'Pearson',
-      email: 'uma@pearson.com',
-      password: process.env.USER_PWD,
-      isAdmin: false
-    }).then(() => {
-      db.Example.create({
-        text: 'Sample item',
-        description: 'Adam can\'t see this',
-        UserId: 2
-      });
-    });
-  });
+	db.User.create({
+		firstName: "Adam",
+		lastName: "Gates",
+		email: "adam@gates.com",
+		password: process.env.ADMIN_USER_PWD,
+		isAdmin: true,
+	}).then(() => {
+		db.User.create({
+			firstName: "Uma",
+			lastName: "Pearson",
+			email: "uma@pearson.com",
+			password: process.env.USER_PWD,
+			isAdmin: false,
+		}).then(() => {
+			db.Example.create({
+				name: "Adam's Truck",
+				datefrom: "10/31/2020",
+				dateto: "11/01/2020",
+				address: "123 Main St.",
+				city: "Wilmington",
+				state: "North Carolina",
+				zip: "28410",
+				about: "Adam's Truck is awesome!",
+				UserId: 1,
+			}).then(() => {
+				db.Example.create({
+					name: "Uma's Truck",
+					datefrom: "11/25/2020",
+					dateto: "11/27/2020",
+					address: "123 Main St.",
+					city: "Greensboro",
+					state: "North Carolina",
+					zip: "27410",
+					about: "Uma's Truck is fabulous!",
+					UserId: 2,
+				});
+			});
+		});
+	});
 };
