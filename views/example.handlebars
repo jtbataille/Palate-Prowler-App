@@ -8,8 +8,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">My Profile</h5>
             <h6 class="card-subtitle mb-2 text-muted">About Me</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <p class="card-text" id="About" style="font-size: 20px">{{userInfo.aboutMe}}</p>
             <a class="btn btn-light border border-dark" href="/profile">Update My Profile</a>
           </div>
         </div>
@@ -89,6 +88,7 @@
 {{!-- check user --}}
 <script>
   var userId = {{userInfo.id}};
+  var userName = {{userInfo.aboutMe}}; 
 
       function modEventAttendBtn() {
         let elem = document.getElementById("eventButton");

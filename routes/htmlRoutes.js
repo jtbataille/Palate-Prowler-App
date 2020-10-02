@@ -63,6 +63,7 @@ module.exports = (db) => {
 				// where: { UserId: req.session.passport.user.id },
 				raw: true,
 			}).then(function (dbExamples) {
+				console.log(req.session.passport.user);
 				const myExamples = dbExamples.filter(
 					(event) => event.UserId === req.session.passport.user.id,
 				);
