@@ -10,7 +10,8 @@ module.exports = (passport, db) => {
           email: req.body.email,
           password: req.body.password,
           firstName: req.body.firstName,
-          lastName: req.body.lastName
+          lastName: req.body.lastName,
+          aboutMe: req.body.aboutMe,
         };
 
         return db.User.create(newUser).then(() => {
@@ -54,7 +55,8 @@ module.exports = (passport, db) => {
         email: req.body.email,
         firstName: req.body.firstName,
         lastName: req.body.lastName,
-        password: req.body.password
+        password: req.body.password,
+        aboutMe: req.body.aboutMe,
       }, {
         where: { id: req.params.id }
       }).then(result => {

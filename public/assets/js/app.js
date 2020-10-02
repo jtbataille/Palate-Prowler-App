@@ -6,6 +6,7 @@ $("#add-user").on("click", function (event) {
 		lastName: $("#inputLast").val().trim(),
 		email: $("#inputEmail").val().trim(),
 		password: $("#inputPassword").val().trim(),
+		aboutMe: $("#inputAbout").val().trim(),
 	};
 
 	if (
@@ -39,6 +40,7 @@ $("#update-user").on("click", function (event) {
 		lastName: $("#inputLast").val().trim(),
 		email: $("#inputEmail").val().trim(),
 		password: $("#inputPassword").val().trim(),
+		aboutMe: $("#inputAbout").val().trim(),
 	};
 	$("#err-msg").empty("");
 	// $('#change-user-modal').modal('show');
@@ -49,7 +51,8 @@ $("#update-user").on("click", function (event) {
 		changeUser.email.length > 0 &&
 		changeUser.password.length > 0 &&
 		changeUser.lastName.length > 0 &&
-		changeUser.firstName.length > 0
+		changeUser.firstName.length > 0 &&
+		changeUser.aboutMe.length > 0
 	) {
 		$.ajax({
 			type: "PUT",
