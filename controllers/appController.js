@@ -2,10 +2,12 @@ module.exports = function (db) {
 	return {
 		// Get all examples
 		getExamples: function (req, res) {
-			db.Example.findAll({}).then(function (dbExamples) {
-				console.log(dbExamples);
-				res.json(dbExamples);
-			});
+			db.Example.findAll({ limit: 10, order: '"datefrom" DESC' }).then(
+				function (dbExamples) {
+					console.log(dbExamples);
+					res.json(dbExamples);
+				},
+			);
 		},
 		// Create a new example
 		createExample: function (req, res) {
