@@ -9,7 +9,10 @@
     <div>
       {{#if isloggedin}}
         You are logged in as {{user.firstName}}
-        <a href="/logout"><br><br><button type="btn" class="btn btn-outline-primary">Logout</button></a>
+        <div id="dashButtons">
+        <a href="/logout"><br><br><button type="btn" class="btn btn-outline-primary btn-space">Logout</button> </a>
+        <a href="/example"><br><br><button type="btn" class="btn btn-outline-primary btn-space">Home</button> </a>
+        </div>
       {{else}}
         <p>Please, log in to use this app.</p>
       {{/if}}
