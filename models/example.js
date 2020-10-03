@@ -24,6 +24,10 @@ module.exports = function (sequelize, DataTypes) {
 		option14: DataTypes.STRING,
 		/* Need to figure out picture capture and datatype */
 		picture: DataTypes.STRING,
+		value: {
+			type: DataTypes.BOOLEAN,
+			defaultValue: false
+		}
 	});
 
 	Example.associate = function (models) {
