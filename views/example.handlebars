@@ -39,10 +39,10 @@
                   {{#if this.value}}
                     <li data-id="{{this.id}}" class="list-group-item">
                       <a href="example/{{this.id}}">{{this.name}}</a>
-                      <button class="btn btn-outline-warning float-right abandon">-</button>
+                      <button class="btn btn-outline-warning float-right eventButton" data-value={{this.value}} data-id="{{this.id}}">-</button>
                     </li>
                   {{/if}}
-                {{/each}} {{!-- {{ add in if to populate/show current date attending}}--}}
+                {{/each}}
               </ul>
           </div>
         </div>
@@ -56,7 +56,6 @@
 
       <div class="col-8">
         {{#each examples}}
-          {{!-- {{#unless past}} --}}
             <div class="card event-card">
               <img src="{{this.picture}}" class="card-img-top" alt="{{this.name}} Logo/Picture">
               <div class="card-body">
@@ -71,10 +70,15 @@
                   <iframe height="100%" width="100%" src="ThisIsWhereTheMapWillBe" class="pb-3 eventMap"></iframe>    
               </div>
               <div class="card-body">
-                  <button class="btn btn-light border border-dark eventButton" data-id="{{this.id}}">Click to Attend!</button>
+                  <button class="btn btn-light border border-dark eventButton" data-value={{this.value}} data-id="{{this.id}}">
+					  {{#if value}}
+						Is Attending!
+						{{else}}
+						Click to Attend.
+					  {{/if}}
+				  </button>
               </div>
             </div>
-          {{!-- {{/unless}} --}}
         {{/each}}
       </div>
     </div>
@@ -94,28 +98,28 @@
 {{!-- check user --}}
 <script>
   var userId = {{userInfo.id}};
-  // var userName = {{userInfo.aboutMe}}; 
 
 $(".eventButton").click(function (event) {
-	let newValue = event.currentTarget.innerHTML === "Click to Attend!";
+	const currentValue = $(this).data("value");
+
+	let newValue = 0;
+	if (currentValue !== newValue) {
+		newValue = 1
+	}
 
 	let id = $(this).data("id");
 	console.log(id);
 
 	$.ajax({
-		url: `/api/user/${userId}`,
+		url: `/api/examples/${id}`,
 		method: 'PATCH',
 		data: {
-			value: newValue
+			value: !newValue
 		}
 	}).then(response => {
 		console.log(response);
 		if (response.success) {
-			if (event.currentTarget.innerHTML == "Click to Attend!") {
-				event.currentTarget.innerHTML = "Is Attending!";
-			} else {
-				event.currentTarget.innerHTML = "Click to Attend!";
-			};
+			window.location.reload();
 		}
 	});
 

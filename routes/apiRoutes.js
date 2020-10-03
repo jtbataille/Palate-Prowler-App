@@ -10,13 +10,13 @@ module.exports = (passport, db) => {
 	router.post("/login", AuthController.login);
 	router.get("/logout", AuthController.logout);
 	router.put("/user/:id", ensureAuthenticated, AuthController.updateUser);
-	router.patch("/user/:id", ensureAuthenticated, AuthController.updateValue);
 	router.delete("/user/:id", ensureAuthenticated, AuthController.deleteUser);
 	router.post("/user/confirm", AuthController.confirmAuth);
 
 	// App
 	router.get("/examples", AppController.getExamples);
 	router.post("/examples", AppController.createExample);
+	router.patch("/examples/:id", AppController.updateValue);
 	router.delete("/examples/:id", AppController.deleteExample);
 
 	return router;
