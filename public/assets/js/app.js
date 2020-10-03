@@ -145,7 +145,6 @@ $("#login").on("click", function (event) {
 });
 
 $(document).ready(function () {
-	console.log("Ready");
 	$("#datepicker-input input").datepicker({
 		format: "mm/dd/yy",
 		maxViewMode: 2,
