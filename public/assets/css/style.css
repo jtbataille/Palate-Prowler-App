@@ -93,3 +93,13 @@ hr {
 .event-card .card-img-top {
 	border-radius: 15px 15px 15px 15px/35px 35px 35px 15px;
 }
+
+#dashButtons {
+	display: flex;
+	justify-content: center;
+}
+
+.btn-space {
+	margin-right: 5px;
+	margin-left: 5px
+}
