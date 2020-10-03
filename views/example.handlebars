@@ -39,7 +39,7 @@
                   {{#if this.value}}
                     <li data-id="{{this.id}}" class="list-group-item">
                       <a href="example/{{this.id}}">{{this.name}}</a>
-                      <button class="btn btn-outline-warning float-right abandon">-</button>
+                      <button class="btn btn-outline-warning float-right eventButton" data-value={{this.value}} data-id="{{this.id}}">-</button>
                     </li>
                   {{/if}}
                 {{/each}}
