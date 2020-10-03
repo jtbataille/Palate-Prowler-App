@@ -73,7 +73,7 @@ module.exports = (passport, db) => {
 		},
 		confirmAuth: (req, res) => {
 			const email = req.body.email;
-			const pwd = req.body.password;
+      const pwd = req.body.password;
 
 			db.User.findOne({
 				where: { email: email },
