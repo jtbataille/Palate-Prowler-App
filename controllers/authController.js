@@ -55,7 +55,6 @@ module.exports = (passport, db) => {
 			});
 		},
 		updateUser: (req, res) => {
-			// console.log('req.body:', req.body);
 			db.User.update(
 				{
 					email: req.body.email,
@@ -71,18 +70,6 @@ module.exports = (passport, db) => {
 				// console.log(result);
 				res.json(result);
 			});
-		},
-		updateValue: (req, res) => {
-			db.User.update(
-				{ value: req.body.value },
-				{ where: { id: req.params.id } },
-			)
-				.then((result) => {
-					res.json({ success: true });
-				})
-				.catch(() => {
-					res.json({ success: false });
-				});
 		},
 		confirmAuth: (req, res) => {
 			const email = req.body.email;
