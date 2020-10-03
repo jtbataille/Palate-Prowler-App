@@ -36,10 +36,12 @@
           <div id="list-example" class="list-group">
              <ul id="example-list" class="list-group">
                 {{#each examples}}
-                <li data-id="{{this.id}}" class="list-group-item">
-                  <a href="example/{{this.id}}">{{this.name}}</a>
-                  <button class="btn btn-outline-warning float-right abandon">-</button>
-                </li>
+                  {{#if this.value}}
+                    <li data-id="{{this.id}}" class="list-group-item">
+                      <a href="example/{{this.id}}">{{this.name}}</a>
+                      <button class="btn btn-outline-warning float-right abandon">-</button>
+                    </li>
+                  {{/if}}
                 {{/each}} {{!-- {{ add in if to populate/show current date attending}}--}}
               </ul>
           </div>
@@ -69,7 +71,7 @@
                   <iframe height="100%" width="100%" src="ThisIsWhereTheMapWillBe" class="pb-3 eventMap"></iframe>    
               </div>
               <div class="card-body">
-                  <a href="#" class="btn btn-light border border-dark" id="eventButton" onclick="modEventAttendBtn()">Click to Attend!</a>
+                  <button class="btn btn-light border border-dark eventButton" data-id="{{this.id}}" value="0">Click to Attend!</button>
               </div>
             </div>
           {{!-- {{/unless}} --}}
@@ -83,19 +85,30 @@
 
 <script src="/assets/js/example.js"></script>
 
+<script>
+  var userName = {{userInfo.aboutMe}};
+</script>
+
 {{> modal/login-block}}
 
 {{!-- check user --}}
 <script>
   var userId = {{userInfo.id}};
-  var userName = {{userInfo.aboutMe}}; 
+  // var userName = {{userInfo.aboutMe}}; 
 
-      function modEventAttendBtn() {
-        let elem = document.getElementById("eventButton");
-        if (elem.innerHTML == "Click to Attend!") {
-            elem.innerHTML = "Is Attending!";
-        } else {
-            elem.innerHTML = "Click to Attend!";
-        }
-    }
+  // $(document).ready(function () {
+    $(".eventButton").click(function (event) {
+      if (event.currentTarget.innerHTML == "Click to Attend!") {
+          event.currentTarget.innerHTML = "Is Attending!";
+          event.currentTarget.value = 1;
+      } else {
+          console.log("switching button back...");
+          event.currentTarget.innerHTML = "Click to Attend!";
+          event.currentTarget.value = 0;
+      };
+      
+      let id = $(this).data("id");
+      console.log(id);
+    })
+    //});
 </script>
