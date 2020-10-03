@@ -49,6 +49,9 @@
         
         <div class="card">
           <div class="card-body text-center">
+            <h5 class="card-title">Create New Truck!</h5>
+          </div>
+          <div class="text-center mb-3">
               {{> modal/bootstrap-modal}}
           </div>
         </div>
@@ -57,9 +60,9 @@
       <div class="col-8">
         {{#each examples}}
             <div class="card event-card">
-              <img src="{{this.picture}}" class="card-img-top" alt="{{this.name}} Logo/Picture">
               <div class="card-body">
-                  <h5 class="card-title eventTitle text-center"><span style="font-size:40px">{{this.name}}</span></h5>
+                <h5 class="card-title eventTitle text-center"><span style="font-size:40px">{{this.name}}</span></h5>
+                <img src="{{this.picture}}" class="card-img-top" alt="{{this.name}} Logo/Picture">
               </div>
               <ul class="list-group list-group-flush">
                   <li class="list-group-item eventDate text-dark"><span style="text-decoration: underline; font-size: 18px">Date(s):</span> {{this.datefrom}} - {{this.dateto}}</li>
