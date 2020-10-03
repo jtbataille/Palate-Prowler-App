@@ -23,6 +23,7 @@ module.exports = (db) => {
 				zip: "28410",
 				about: "Adam's Truck is awesome!",
 				picture: "/assets/images/adam-demo.jpg",
+				value: false,
 				UserId: 1,
 			}).then(() => {
 				db.Example.create({
@@ -35,6 +36,7 @@ module.exports = (db) => {
 					zip: "27410",
 					about: "Uma's Truck is fabulous!",
 					picture: "/assets/images/uma-demo.jpg",
+					value: false,
 					UserId: 2,
 				});
 			});

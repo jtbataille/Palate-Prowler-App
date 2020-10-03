@@ -71,7 +71,7 @@
                   <iframe height="100%" width="100%" src="ThisIsWhereTheMapWillBe" class="pb-3 eventMap"></iframe>    
               </div>
               <div class="card-body">
-                  <button class="btn btn-light border border-dark eventButton" data-id="{{this.id}}" value="0">Click to Attend!</button>
+                  <button class="btn btn-light border border-dark eventButton" data-id="{{this.id}}" value="false">Click to Attend!</button>
               </div>
             </div>
           {{!-- {{/unless}} --}}
@@ -100,11 +100,13 @@
     $(".eventButton").click(function (event) {
       if (event.currentTarget.innerHTML == "Click to Attend!") {
           event.currentTarget.innerHTML = "Is Attending!";
-          event.currentTarget.value = 1;
+          event.currentTarget.value = "true";
+          console.log("button clicked value: " + event.currentTarget.value);
       } else {
           console.log("switching button back...");
           event.currentTarget.innerHTML = "Click to Attend!";
-          event.currentTarget.value = 0;
+          event.currentTarget.value = "false";
+          console.log("button un-clicked value: " + event.currentTarget.value);
       };
       
       let id = $(this).data("id");
