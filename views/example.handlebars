@@ -71,7 +71,7 @@
                   <iframe height="100%" width="100%" src="ThisIsWhereTheMapWillBe" class="pb-3 eventMap"></iframe>    
               </div>
               <div class="card-body">
-                  <button class="btn btn-light border border-dark eventButton" data-id="{{this.id}}" value="false">Click to Attend!</button>
+                  <button class="btn btn-light border border-dark eventButton" data-id="{{this.id}}">Click to Attend!</button>
               </div>
             </div>
           {{!-- {{/unless}} --}}
@@ -96,21 +96,28 @@
   var userId = {{userInfo.id}};
   // var userName = {{userInfo.aboutMe}}; 
 
-  // $(document).ready(function () {
-    $(".eventButton").click(function (event) {
-      if (event.currentTarget.innerHTML == "Click to Attend!") {
-          event.currentTarget.innerHTML = "Is Attending!";
-          event.currentTarget.value = "true";
-          console.log("button clicked value: " + event.currentTarget.value);
-      } else {
-          console.log("switching button back...");
-          event.currentTarget.innerHTML = "Click to Attend!";
-          event.currentTarget.value = "false";
-          console.log("button un-clicked value: " + event.currentTarget.value);
-      };
-      
-      let id = $(this).data("id");
-      console.log(id);
-    })
-    //});
+$(".eventButton").click(function (event) {
+	let newValue = event.currentTarget.innerHTML === "Click to Attend!";
+
+	let id = $(this).data("id");
+	console.log(id);
+
+	$.ajax({
+		url: `/api/user/${userId}`,
+		method: 'PATCH',
+		data: {
+			value: newValue
+		}
+	}).then(response => {
+		console.log(response);
+		if (response.success) {
+			if (event.currentTarget.innerHTML == "Click to Attend!") {
+				event.currentTarget.innerHTML = "Is Attending!";
+			} else {
+				event.currentTarget.innerHTML = "Click to Attend!";
+			};
+		}
+	});
+
+})
 </script>
