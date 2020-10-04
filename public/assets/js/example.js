@@ -86,7 +86,6 @@ const refreshExamples = function () {
 const handleFormSubmit = function (event) {
 	event.preventDefault();
 	console.log("Form Submit");
-	console.log($exampleOption1);
 	const example = {
 		name: $exampleName.val().trim(),
 		datefrom: $exampleDateFrom.val().trim(),
@@ -121,6 +120,8 @@ const handleFormSubmit = function (event) {
 		alert("You must enter a name, date, and address!");
 		return;
 	}
+
+	console.log("Event Made: ", example);
 
 	API.saveExample(example).then(function () {
 		refreshExamples();

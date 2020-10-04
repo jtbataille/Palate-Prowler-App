@@ -15,6 +15,7 @@ module.exports = (passport, db) => {
 
 	// App
 	router.get("/examples", AppController.getExamples);
+	// modal form route
 	router.post("/examples", AppController.createExample);
 	router.patch("/examples/:id", AppController.updateValue);
 	router.delete("/examples/:id", AppController.deleteExample);
