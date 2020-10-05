@@ -2,6 +2,11 @@ body {
 	color: white;
 	background-size: cover;
 	height: 100%;
+	background-image: url("/assets/images/bckgrd1.png");
+}
+
+.navbar {
+	opacity: .85;
 }
 
 .jumbotron {
@@ -10,6 +15,17 @@ body {
 
 .header-wrap {
 	border: none !important;
+}
+
+.navbar-brand {
+	font-size: 25px;
+}
+
+.nav-link:hover {
+	border: .1px solid #333;
+	font-size: 19px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 200ms ease-out;
 }
 
 .modal {
@@ -40,9 +56,10 @@ body {
 	padding-bottom: 2%;
 	margin-top: 10%;
 	height: 100%;
-	background-color: lightgrey;
+	background-color: rgb(177, 174, 174);
 	border-radius: 0.25rem;
 	margin-bottom: 2%;
+	opacity: .95;
 	/* width: 600px; */
 }
 
@@ -75,8 +92,14 @@ hr {
 	color: #444;
 }
 
-#eventButton:hover {
+.eventButton:hover, .profileButton:hover {
 	background-color: #333;
+	color: white;
+}
+
+/* Overwrites .eventButton styling to make unique while keeping functionality */
+.minusButton:hover {
+	background-color: #FFC107;
 	color: white;
 }
 

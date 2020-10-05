@@ -9,7 +9,7 @@
             <h5 class="card-title">{{userInfo.firstName}}'s Profile</h5>
             <h6 class="card-subtitle mb-2 text-muted">About Me</h6>
             <p class="card-text" id="About" style="font-size: 20px">{{userInfo.aboutMe}}</p>
-            <a class="btn btn-light border border-dark" href="/profile">Update My Profile</a>
+            <a class="btn btn-light border border-dark profileButton" href="/profile">Update My Profile</a>
           </div>
         </div>
 
@@ -39,7 +39,7 @@
                   {{#if this.value}}
                     <li data-id="{{this.id}}" class="list-group-item">
                       <a href="example/{{this.id}}">{{this.name}}</a>
-                      <button class="btn btn-outline-warning float-right eventButton" data-value={{this.value}} data-id="{{this.id}}">-</button>
+                      <button class="btn btn-outline-warning float-right eventButton minusButton" data-value={{this.value}} data-id="{{this.id}}">-</button>
                     </li>
                   {{/if}}
                 {{/each}}
@@ -75,9 +75,9 @@
               <div class="card-body">
                   <button class="btn btn-light border border-dark eventButton" data-value={{this.value}} data-id="{{this.id}}">
                     {{#if value}}
-                    Is Attending!
+                    You're Attending!
                     {{else}}
-                    Click to Attend.
+                    Click to Attend!
                     {{/if}}
                   </button>
               </div>
