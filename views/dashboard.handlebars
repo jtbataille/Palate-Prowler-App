@@ -4,18 +4,17 @@
 {{!-- Login Landing Page --}}
 <div id="main-container" class="container">
   <div class="jumbotron text-center header-wrap" align="center">
-	  <img id="dash-logo" src="\assets\images\palate-prowler-logo.png" alt="Palate Prowler">
-    <p class="lead">Welcome to <strong>Palate Prowler</strong></p>
+    <p class="lead">Welcome to <strong>Palate Prowler !</strong></p>
     <hr class="my-4">
     <div>
       {{#if isloggedin}}
       You are logged in as {{user.firstName}}
       <div id="dashButtons">
-        <a href="/example"><br><br><button type="btn" class="btn btn-outline-primary btn-space">Home</button> </a>
-        <a href="/logout"><br><br><button type="btn" class="btn btn-outline-primary btn-space">Logout</button> </a>
+        <a href="/example"><br><br><button type="btn" class="btn btn-outline-light btn-space">Home</button> </a>
+        <a href="/logout"><br><br><button type="btn" class="btn btn-outline-light btn-space">Logout</button> </a>
       </div>
       {{else}}
-      <p>Please, log in to use this app.</p>
+      <p>Please log in to use this app.</p>
       {{/if}}
       <h5 id="login-err-msg"></h5>
     </div>
