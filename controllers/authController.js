@@ -55,6 +55,8 @@ module.exports = (passport, db) => {
 			});
 		},
 		updateUser: (req, res) => {
+			console.log('id:', req.params.id);
+			console.log('body:', req.body);
 			db.User.update(
 				{
 					email: req.body.email,

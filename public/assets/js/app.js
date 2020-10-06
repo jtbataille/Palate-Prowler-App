@@ -61,7 +61,7 @@ $("#update-user").on("click", function (event) {
 		}).then((result) => {
 			console.log("Updated user:", result);
 			// Reload the page to get the updated list
-			window.location.href = "/logout";
+			window.location.href = "/";
 		});
 	} else {
 		console.log("**Please fill out entire form**");
