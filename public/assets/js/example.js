@@ -110,7 +110,6 @@ const handleFormSubmit = function (event) {
 		option13: $exampleOption13.val().trim(),
 		option14: $exampleOption14.val().trim(),
 		picture: $examplePicture.val().trim(),
-		value: $exampleValue,
 		UserId: window.userId,
 	};
 

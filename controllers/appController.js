@@ -2,7 +2,7 @@ module.exports = function (db) {
 	return {
 		// Get all
 		getExamples: function (req, res) {
-			db.Example.findAll({}).then(function (dbExamples) {
+			db.Example.findAll({ order: [ ['datefrom', 'ASC'] ] }).then(function (dbExamples) {
 				console.log(dbExamples);
 				res.json(dbExamples);
 			});
