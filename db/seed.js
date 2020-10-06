@@ -28,7 +28,7 @@ module.exports = (db) => {
 			}).then(() => {
 				db.Example.create({
 					name: "Uma's Truck",
-					datefrom: "11/25/2020",
+					datefrom: "09/22/2020",
 					dateto: "11/27/2020",
 					address: "329 Phillips Hall",
 					city: "Chapel Hill",
