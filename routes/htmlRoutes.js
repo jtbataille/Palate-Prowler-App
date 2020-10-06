@@ -17,12 +17,13 @@ module.exports = (db) => {
 				where: {
 					id: req.session.passport.user.id,
 				},
-			}).then(() => {
+				raw: true
+			}).then((data) => {
 				const user = {
-					userInfo: req.session.passport.user,
+					userInfo: data,
 					isloggedin: req.isAuthenticated(),
 				};
-				// console.log(user);
+				console.log('user:', user);
 				res.render("profile", user);
 			});
 		} else {
@@ -33,11 +34,18 @@ module.exports = (db) => {
 	// Load dashboard page
 	router.get("/", (req, res) => {
 		if (req.isAuthenticated()) {
-			const user = {
-				user: req.session.passport.user,
-				isloggedin: req.isAuthenticated(),
-			};
-			res.render("dashboard", user);
+			db.User.findOne({
+				where: {
+					id: req.session.passport.user.id,
+				},
+				raw: true
+			}).then((data) => {
+				const user = {
+					userInfo: data,
+					isloggedin: req.isAuthenticated(),
+				};
+				res.render("dashboard", user);
+			});
 		} else {
 			res.render("dashboard");
 		}
@@ -67,12 +75,20 @@ module.exports = (db) => {
 				const myExamples = dbExamples.filter(
 					(event) => event.UserId === req.session.passport.user.id,
 				);
-				res.render("example", {
-					userInfo: req.session.passport.user,
-					isloggedin: req.isAuthenticated(),
-					msg: "Welcome!",
-					examples: dbExamples,
-					myExamples,
+
+				db.User.findOne({
+					where: {
+						id: req.session.passport.user.id,
+					},
+					raw: true
+				}).then((data) => {
+					res.render("example", {
+						userInfo: data,
+						isloggedin: req.isAuthenticated(),
+						msg: "Welcome!",
+						examples: dbExamples,
+						myExamples,
+					});
 				});
 			});
 		} else {
