@@ -21,7 +21,7 @@ const $exampleOption11 = $("#checkbox11");
 const $exampleOption12 = $("#checkbox12");
 const $exampleOption13 = $("#checkbox13");
 const $exampleOption14 = $("#checkbox14");
-const $examplePicture = $("#modal-form-picture");
+// const $examplePicture = $("#modal-form-picture");
 const $submitBtn = $("#modal-submit");
 const $exampleList = $("#example-list");
 
@@ -108,7 +108,8 @@ const handleFormSubmit = function (event) {
 		option12: $exampleOption12.val().trim(),
 		option13: $exampleOption13.val().trim(),
 		option14: $exampleOption14.val().trim(),
-		picture: $examplePicture.val().trim(),
+		// picture: $examplePicture.val().trim(),
+		picture: "assets/images/palate-prowler-event-banner.png",
 		UserId: window.userId,
 	};
 
@@ -148,7 +149,7 @@ const handleFormSubmit = function (event) {
 	$exampleOption12.val("");
 	$exampleOption13.val("");
 	$exampleOption14.val("");
-	$examplePicture.val("");
+	// $examplePicture.val("");
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
