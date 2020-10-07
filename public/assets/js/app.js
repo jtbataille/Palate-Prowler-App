@@ -145,13 +145,22 @@ $("#login").on("click", function (event) {
 });
 
 $(document).ready(function () {
-	$("#datepicker-input input").datepicker({
+	$("#datepicker-start input").datepicker({
 		format: "mm/dd/yy",
 		maxViewMode: 2,
 		todayBtn: "linked",
 		clearBtn: true,
 		orientation: "bottom auto",
-		forceParse: false,
+		forceParse: true,
+		autoclose: true,
+	});
+	$("#datepicker-end input").datepicker({
+		format: "mm/dd/yy",
+		maxViewMode: 2,
+		todayBtn: "linked",
+		clearBtn: true,
+		orientation: "bottom auto",
+		forceParse: true,
 		autoclose: true,
 	});
 });

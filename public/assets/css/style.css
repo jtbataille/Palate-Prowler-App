@@ -137,6 +137,8 @@ hr {
 
 #dash-logo {
 	max-width: 25rem;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 /* image grayscale - hover for color */

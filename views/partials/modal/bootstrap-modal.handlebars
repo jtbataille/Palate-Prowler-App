@@ -31,13 +31,13 @@
 					</div>
 					<!-- DATES -->
 					<div class="form-row">
-						<div class="col-md-6 form-group datepicker" id="datepicker-input" >
+						<div class="col-md-6 form-group datepicker" id="datepicker-start" >
 							<label for="modal-form-datefrom">Date From:</label>
-							<input type="text" id="modal-form-datefrom" name="date" placeholder="MM/DD/YY" class="form-control" data-provide="datepicker">
+							<input type="text" id="modal-form-datefrom" name="date" placeholder="MM/DD/YY" class="form-control" data-provide="datepicker" data-date-start-date="0d">
 						</div>
-						<div class="col-md-6 form-group datepicker" id="datepicker-input">
+						<div class="col-md-6 form-group datepicker" id="datepicker-end">
 							<label for="modal-form-dateto">Date To:</label>
-							<input type="text" id="modal-form-dateto" name="date" placeholder="MM/DD/YY" class="form-control">
+							<input type="text" id="modal-form-dateto" name="date" placeholder="MM/DD/YY" class="form-control" data-date-start-date="0d">
 						</div>
 					</div>
 					<div class="form-row">
@@ -213,9 +213,10 @@
 						</div>
 					</div>
 					<!-- UPLOAD PICTURE -->
-					<div class="form-row">
+					<div class="form-row">					
 						<label for="modal-form-picture">Upload a picture:</label>
-						<input type="file" class="form-control-file" id="modal-form-picture">
+						<input type="file" class="form-control-file" id="modal-form-picture" disabled>
+						<p class="text-warning">↑ Coming Soon! ↑</p>
 					</div>
 					<div class="form-row">
 						<div class="col-sm-12">
