@@ -73,7 +73,6 @@ module.exports = (db) => {
 				order: [ ['datefrom', 'ASC'] ],
 				raw: true,
 			}).then(function (dbExamples) {
-				console.log("********", dbExamples);
 				const myExamples = dbExamples.filter(
 					(event) => event.UserId === req.session.passport.user.id,
 				);
@@ -105,7 +104,10 @@ module.exports = (db) => {
 	// Load example page and pass in an example by id
 	router.get("/example/:id", function (req, res) {
 		if (req.isAuthenticated()) {
-			db.Example.findOne({ where: { id: req.params.id }, raw: true }).then(
+			db.Example.findOne({
+				where: { id: req.params.id },
+				raw: true
+			}).then(
 				function (dbExample) {
 					res.render("example-detail", {
 						userInfo: req.session.passport.user,

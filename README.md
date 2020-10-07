@@ -8,7 +8,7 @@
 
 ## Description
 
-Description
+Palate Prowler is an aplication which allows users to find and create food truck events using a custom profile. Once logged in the user will be able to create new events that will then be added to thier events list and can later be removed. Users who are logged in to the application can select events they will be attending and those events will automatically be added to thier attending events list on thier profile. Palate Prowler is a user friendly application that brings people and mobile food together. 
 
 [Power Point Presentation](https://docs.google.com/presentation/d/1xrm38HKg0Q-XkR0NuTz1hU0R1DjMHUr4zBdDHl0bu1s/edit?usp=sharing)
 
@@ -66,7 +66,13 @@ npm install
 
 ## Features
 
-- List Here
+- Create events
+- Remove events
+- Attend events
+- Login/out
+- Save profile data
+- Modify profile data 
+- Modify events
 
 ## Example Gif
 
