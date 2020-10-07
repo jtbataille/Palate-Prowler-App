@@ -124,6 +124,7 @@ const handleFormSubmit = function (event) {
 
 	API.saveExample(example).then(function () {
 		refreshExamples();
+		window.location.reload();
 	});
 
 	$exampleName.val("");
@@ -158,6 +159,7 @@ const handleDeleteBtnClick = function () {
 
 	API.deleteExample(idToDelete).then(function () {
 		refreshExamples();
+		window.location.reload();
 	});
 };
 
