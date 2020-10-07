@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const moment = require("moment");
 
 module.exports = (db) => {
 	// Load register page
@@ -69,13 +70,18 @@ module.exports = (db) => {
 		if (req.isAuthenticated()) {
 			db.Example.findAll({
 				// where: { UserId: req.session.passport.user.id },
+				order: [ ['datefrom', 'ASC'] ],
 				raw: true,
 			}).then(function (dbExamples) {
-				console.log(req.session.passport.user);
+				console.log("********", dbExamples);
 				const myExamples = dbExamples.filter(
 					(event) => event.UserId === req.session.passport.user.id,
 				);
-
+				const forExamples = dbExamples.map(example => {
+					example.datefrom = moment(example.datefrom, "YYYY-DD-MM").calendar();
+					example.dateto = moment(example.dateto, "YYYY-DD-MM").calendar();
+				});
+				console.log(forExamples);
 				db.User.findOne({
 					where: {
 						id: req.session.passport.user.id,

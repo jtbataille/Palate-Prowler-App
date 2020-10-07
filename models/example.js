@@ -1,8 +1,8 @@
 module.exports = function (sequelize, DataTypes) {
 	const Example = sequelize.define("Example", {
 		name: DataTypes.STRING,
-		datefrom: DataTypes.STRING,
-		dateto: DataTypes.STRING,
+		datefrom: DataTypes.DATE,
+		dateto: DataTypes.DATE,
 		address: DataTypes.STRING,
 		city: DataTypes.STRING,
 		state: DataTypes.STRING,
