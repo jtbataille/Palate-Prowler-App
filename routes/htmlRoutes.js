@@ -78,7 +78,7 @@ module.exports = (db) => {
 					(event) => event.UserId === req.session.passport.user.id,
 				);
 				const forExamples = dbExamples.map(example => {
-					example.datefrom = moment(example.datefrom, "YYYY-DD-MM").calendar("dddd, MMMM Do YYYY");
+					example.datefrom = moment(example.datefrom, "YYYY-DD-MM").calendar();
 					example.dateto = moment(example.dateto, "YYYY-DD-MM").calendar();
 				});
 				console.log(forExamples);
