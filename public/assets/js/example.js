@@ -24,7 +24,6 @@ const $exampleOption14 = $("#checkbox14");
 const $examplePicture = $("#modal-form-picture");
 const $submitBtn = $("#modal-submit");
 const $exampleList = $("#example-list");
-const $exampleValue = $(".eventButton");
 
 // The API object contains methods for each kind of request we'll make
 const API = {
