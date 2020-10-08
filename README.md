@@ -1,4 +1,4 @@
-# **Team Project II**
+# **Palate Prowler**
 
 ![GitHub license](https://img.shields.io/badge/Made%20by-%40WasteOfADrumBum-green)  
 ![GitHub license](https://img.shields.io/badge/Made%20by-%40JinhiA-green)  
