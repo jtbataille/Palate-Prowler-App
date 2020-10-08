@@ -1,5 +1,7 @@
 # **Palate Prowler**
 
+<img src="public/assets/images/palate-prowler-logo.png" width="200" />
+
 ![GitHub license](https://img.shields.io/badge/Made%20by-%40WasteOfADrumBum-green)  
 ![GitHub license](https://img.shields.io/badge/Made%20by-%40JinhiA-green)  
 ![GitHub license](https://img.shields.io/badge/Made%20by-%40jtbataille-green)
