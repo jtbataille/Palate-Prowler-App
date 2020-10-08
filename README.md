@@ -76,7 +76,7 @@ npm install
 
 ## Example Gif
 
-<img src="https://via.placeholder.com/500x300.png/09f/fff" width="500" />
+<img src="public/assets/images/palate-prowler.gif" width="500" />
 
 ## MVC Paradigm Folder Structure
 
