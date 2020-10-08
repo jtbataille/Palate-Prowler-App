@@ -136,7 +136,7 @@ hr {
 }
 
 #dash-logo {
-	max-width: 25rem;
+	max-width: 50% !important;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 }
