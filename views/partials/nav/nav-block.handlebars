@@ -3,30 +3,33 @@
   <a class="navbar-brand" href="/">
     <h1>Palate Prowler</h1>
   </a>
-  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
   <!-- Links -->
-  <ul class="nav navbar-nav ml-auto">
-
-    {{#if isloggedin}}
-	  {{!-- User Home Page --}}
-      <li class="nav-item">
-        <a class="nav-link mr-3" href="/example">Events</a>
-      </li>
-	  {{!-- Logout --}}
-      <li class="nav-item">
-        <a class="nav-link" href="/logout">Logout</a>
-      </li>
-    {{else}}
-	  {{!-- Login --}}
-      <li class="nav-item">
-        <a class="nav-link" href="#" id="login-modal">Login</a>
-      </li>
-	  {{!-- Register --}}
-      <li class="nav-item">
-        <a class="nav-link" href="/register" data-register={{register}}>Register</a>
-      </li>
-    {{/if}}
-  </ul>
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="nav navbar-nav ml-auto">
+      {{#if isloggedin}}
+      {{!-- User Home Page --}}
+        <li class="nav-item">
+          <a class="nav-link mr-3" href="/example">HOME</a>
+        </li>
+      {{!-- Logout --}}
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">LOGOUT</a>
+        </li>
+      {{else}}
+      {{!-- Login --}}
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="login-modal">LOGIN</a>
+        </li>
+      {{!-- Register --}}
+        <li class="nav-item">
+          <a class="nav-link" href="/register" data-register={{register}}>REGISTER</a>
+        </li>
+      {{/if}}
+    </ul>
+  </div>
 </nav>
 
 {{> modal/login-block}}

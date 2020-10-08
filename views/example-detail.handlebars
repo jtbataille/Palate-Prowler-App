@@ -2,15 +2,14 @@
 {{> nav/nav-block}}
 
 {{!-- Event Details --}}
-<div class="container">
+<div class="container bg-transparent">
   <div class="row">
     <div class="col-8 offset-2">
       <div class="card mt-4">
         <div class="card-body">
 			<h5 class="card-title eventTitle text-center"><span style="font-size:40px">{{example.name}}</span></h5>
-			<img src="{{example.picture}}" class="card-img-top" alt="{{example.name}} Logo/Picture">
-			</div>
-			<ul class="list-group list-group-flush">
+			<img src="/{{example.picture}}" class="card-img-top" alt="{{example.name}}">
+			<ul class="list-group list-group-flush mb-3 mt-3">
 				<li class="list-group-item eventDate text-dark"><span style="text-decoration: underline; font-size: 18px">Date(s):</span> {{example.datefrom}} - {{example.dateto}}</li>
 				<li class="list-group-item eventDescription text-dark"><span style="text-decoration: underline; font-size: 18px">Description:</span> {{example.about}}</li>
 				<li class="list-group-item eventLocation text-dark"><span style="text-decoration: underline; font-size: 18px">You can find us right here:</span> {{example.address}}, {{example.city}}, {{example.state}}, {{example.zip}}</li>

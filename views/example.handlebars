@@ -3,19 +3,19 @@
 <div id="home">
   <div class="container">
     <div class="row">
-      <div class="col-4"> 
+      <div class="col-lg-4"> 
         <div id="profile-card" class="card">
           <div class="card-body text-center">
-            <h5 class="card-title">{{userInfo.firstName}}'s Profile</h5>
-            <h6 class="card-subtitle mb-2 text-muted">About Me</h6>
-            <p class="card-text" id="About" style="font-size: 20px">{{userInfo.aboutMe}}</p>
+            <h3 class="card-title">{{userInfo.firstName}}'s Profile</h3>
+            <h5 class="card-subtitle mb-2 text-muted">About Me</h5>
+            <p class="card-text" id="About">{{userInfo.aboutMe}}</p>
             <a class="btn btn-light border border-dark profileButton" href="/profile">Update My Profile</a>
           </div>
         </div>
 
         <div class="card border-primary mb-3 p-3">
           <div class="card-body text-center">
-            <h5 class="card-title">My Events</h5>
+            <h4 class="card-title">My Events</h4>
             </div>
           <div id="list-example" class="list-group">
               <ul id="example-list" class="list-group">
@@ -31,7 +31,7 @@
 
         <div class="card border-primary mb-3 p-3">
           <div class="card-body text-center">
-            <h5 class="card-title">My Attending Events</h5>
+            <h4 class="card-title">My Attending Events</h4>
             </div>
           <div id="list-example" class="list-group">
              <ul id="example-list" class="list-group">
@@ -49,19 +49,17 @@
         
         <div class="card">
           <div class="card-body text-center">
-            <h5 class="card-title">Create A New Truck Event!</h5>
-          </div>
-          <div class="text-center mb-3">
-              {{> modal/bootstrap-modal}}
+            <h4 class="card-title">Create A New Truck Event!</h4>
+            {{> modal/bootstrap-modal}}
           </div>
         </div>
       </div>
 
-      <div class="col-8">
+      <div class="col-lg-8">
         {{#each examples}}
             <div class="card event-card">
               <div class="card-body">
-                <h5 class="card-title eventTitle text-center"><span style="font-size:40px">{{this.name}}</span></h5>
+                <h1 class="card-title eventTitle text-center"><span>{{this.name}}</span></h1>
                 <img src="{{this.picture}}" class="card-img-top" alt="{{this.name}} Logo/Picture">
               </div>
               <ul class="list-group list-group-flush mb-3">
